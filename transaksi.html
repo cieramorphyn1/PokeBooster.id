@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokebooster.id - Form Pemesanan</title>
+</head>
+<body bgcolor="#FFFFFF" text="#1A1A1A" link="#1A1A1A" vlink="#333333">
+
+    <table width="100%" border="0" cellpadding="20" bgcolor="#1A1A1A">
+        <tr><td align="center"><font face="Impact" size="7" color="#FFCC00">POKEBOOSTER<font color="#FFFFFF">.ID</font></font></td></tr>
+    </table>
+
+    <table width="100%" border="1" cellpadding="10" cellspacing="0" bordercolor="#FFCC00" bgcolor="#F0F0F0">
+        <tr align="center">
+            <td width="20%"><a href="index.html"><b>HOME</b></a></td>
+            <td width="20%"><a href="produk.html"><b>KATALOG PRODUK (3x3)</b></a></td>
+            <td width="20%"><a href="detail1.html"><b>DETAIL PRODUK</b></a></td>
+            <td width="20%" bgcolor="#FFCC00"><a href="transaksi.html"><b>FORM PEMESANAN</b></a></td>
+            <td width="20%"><a href="profil.html"><b>KONTAK & PERUSAHAAN</b></a></td>
+        </tr>
+    </table>
+
+    <br>
+    <h2 align="center"><font face="Arial">FORMULIR TRANSAKSI RESERVASI</font></h2>
+    <center><hr color="#FFCC00" width="150" size="4"></center>
+    <br>
+
+    <table width="650" align="center" border="1" cellpadding="25" cellspacing="0" bordercolor="#FFCC00" bgcolor="#F0F0F0">
+        <tr>
+            <td>
+                <form onsubmit="alert('Pemesanan Berhasil! info pemesanan akan dikirim via gmail atau whatsapp'); return true;">
+                    
+                    <font face="Arial" size="3"><b>Nama Lengkap:</b></font><br>
+                    <input type="text" name="nama" size="50" required><br><br>
+
+                    <font face="Arial" size="3"><b>Alamat Gmail:</b></font><br>
+                    <input type="email" name="email" size="50" required><br><br>
+
+                    <font face="Arial" size="3"><b>No. WhatsApp:</b></font><br>
+                    <input type="text" name="wa" size="50" required><br><br>
+
+                    <!-- SELECTION TAMBAHAN -->
+                    <font face="Arial" size="3"><b>Kategori Box Tambahan:</b></font><br>
+                    <select name="kategori">
+                        <option>Set Utama (Booster Box)</option>
+                        <option>Set Spesial Expansion Pack</option>
+                    </select><br><br>
+
+                    <font face="Arial" size="3"><b>Alamat Tujuan Pengiriman:</b></font><br>
+                    <textarea name="alamat" rows="4" cols="52" required></textarea><br><br>
+
+                    <font face="Arial" size="3"><b>Metode Pembayaran:</b></font><br>
+                    <input type="radio" name="payment" value="tf" checked> Transfer Bank<br>
+                    <input type="radio" name="payment" value="ewallet"> E-Wallet<br>
+                    <input type="radio" name="payment" value="toko"> Datang Ke Toko Langsung<br><br>
+
+                    <font face="Arial" size="3"><b>Catatan Pesanan Tambahan:</b></font><br>
+                    <textarea name="note" rows="3" cols="52" placeholder="Sebutkan detail request box jika ada..."></textarea><br><br>
+
+                    <center>
+                        <input type="submit" value="PROSES PEMESANAN" style="background:#FFCC00; font-weight:bold; padding:10px 20px; border:1px solid #1A1A1A;">
+                    </center>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+</body>
+</html>
